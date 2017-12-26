@@ -26,6 +26,8 @@ class Module implements ConfigProviderInterface, ServiceProviderInterface, Autol
 
     public function getServiceConfig()
     {
+//        var_dump(__DIR__ . '/config/service.config.php');
+//        die();
         return include __DIR__ . '/config/service.config.php';
     }
 }
